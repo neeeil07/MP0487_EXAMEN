@@ -1,0 +1,108 @@
+body {
+    font-family: 'Bahnschrift';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10%;
+    background: url('../../resources/images/octagon_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+a[href="index.html"] {
+    display: block;
+    width: 10px;
+    transition: transform 0.3s;
+}
+
+a[href="index.html"]:hover {
+    transform: scale(1.1);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-inline: 5% 8%;
+    padding-block: 5%;
+    margin-right: 65%;
+    background: linear-gradient(to bottom right, #000000, #333333);
+    opacity: 0.9;
+    margin-block: 10%;
+    margin-top: 100px;;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-family: 'Consolas', monospace;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 30px #acacac;
+}
+
+input[type="submit"] {
+    font-family: 'Bahnschrift';
+    background: linear-gradient(to left top, #000000, #333333);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 100px;
+    border-radius: 5px;
+    border: none;
+    margin-block-start: 5%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right bottom, #00b7c4, #004d5d);
+    transform: scale(1.03);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+    margin-block: 5%;
+}
+
+/* Pantallas muy grandes (1440px y superiores) */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+ 
+    nav {
+        width: 100%;
+    }
+}
+
+/* Telefonos (max 678px) */
+@media screen and (max-width: 678px) {
+    body {
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-container {
+        margin-right: 0;
+        padding: 10%;
+    }
+}
+
+/* Tablets y Pantallas medianas (max 1440px) */
+@media screen and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+}

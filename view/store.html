@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - Knockout Zone</title>
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="icon" href="../resources/images/logolightbig.png" sizes="256x256">
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <a href="home.html" class="logo-container">
+                    <img class="logo-container" src="../resources/images/logolight.png" alt="Knockout Zone Logo">
+                </a>
+                <ul class="nav-list">
+                    <li class="current">STORE</li>
+                    <li><a href="forum.html">FORUM</a></li>
+                    <li><a href="events.php">EVENTS</a></li>
+                    <li><a href="fighters.html">FIGHTERS</a></li>
+                </ul>
+                <a href="profile.php" class="login-button">
+                    <img src="../resources/profiles/default-profile.png" alt="Default Profile Picture">
+                </a>
+            </nav>
+        </header>
+        <hr>
+        <div class="banner">
+            <h2>KNOCKOUT Store</h2>
+            <hr>
+            <p>Shop the latest gear and merchandise!</p>
+        </div>
+        <hr>
+        <div class="filter-container">
+            <label for="type-filter">Filter by :</label>
+            <select id="type-filter">
+                <option value="all">ALL</option>
+                <option value="equipment">EQUIPMENT</option>
+                <option value="clothes">CLOTHES</option>
+                <option value="accessories">ACCESSORIES</option>
+            </select>
+        </div>
+        <article class="catalog">
+            <section class="product-item" data-type="equipment">
+                <img src="../resources/images/shop/gloves.png" alt="Knockout Gloves">
+                <hr>
+                <div class="product-info">
+                    <h2>KNOCKOUT GLOVES</h2>
+                    <p>Price: $25.99 / <span>Size: M, L</span></p>
+                    <button class="add-cart">
+                        <img src="../resources/images/shop/cart.png" alt="">
+                        <span>Buy product</span>
+                    </button>
+                </div>
+            </section>
+            <section class="product-item" data-type="clothes">
+                <img src="../resources/images/shop/tshirt.png" alt="Knockout Gloves">
+                <img src="">
+                <hr>
+                <div class="product-info">
+                    <h2>KNOCKOUT T-SHIRT</h2>
+                    <p>Price: $10.20 / <span>Size: S, M, L, XL</span></p>
+                    <button class="add-cart">
+                        <img src="../resources/images/shop/cart.png" alt="">
+                        <span>Buy product</span>
+                    </button>
+                </div>
+            </section><section class="product-item" data-type="accessories">
+                <img src="../resources/images/shop/bag.png" alt="Knockout Bag">
+                <img src="">
+                <hr>
+                <div class="product-info">
+                    <h2>KNOCKOUT BAG</h2>
+                    <p>Price: $15.99 / <span>Size: M, L</span></p>
+                    <button class="add-cart">
+                        <img src="../resources/images/shop/cart.png" alt="">
+                        <span>Buy product</span>
+                    </button>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <div>
+                <h3>KNOCKOUT ZONE</h3>
+                <p><a href="aboutus.html">About us</a></p>
+            </div>
+            <div>
+                <h3>SOCIAL MEDIA</h3>
+                <p>Facebook</p>
+                <a href="https://www.facebook.com">Knockout Zone Official</a>
+                <p>Instagram</p>
+                <a href="https://www.instagram.com">@knck_zn</a>
+                <p>X (Twitter)</p>
+                <a href="https://x.com">@knockout.zone</a>
+            </div>
+            <div>
+                <h3>CONTACT US</h3>
+                <p>knockoutzone@gmail.com</p>
+                <p>123 456 7890</p>
+            </div>
+        </footer>
+        <script src="js/store.js"></script>
+    </div>
+</body>
+
+</html>

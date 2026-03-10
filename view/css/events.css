@@ -1,0 +1,206 @@
+body {
+    font-family: 'Bahnschrift';
+    margin: 0;
+}
+
+header {
+    max-width: 100%;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background: linear-gradient(to bottom right, #000000, #333333);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-container {
+    display: block;
+    width: 90px;
+    transition: transform 0.3s;
+}
+
+.logo-container:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-inline: 5%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, font-weight 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.login-button {
+    color: #ffffff;
+    font-size: 20px;
+    max-width: 100%;
+    width: 1%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 50px;
+    transition: transform 0.3s, color 0.3s, font-weight 0.3s, box-shadow 0.3s;
+}
+
+.login-button img {
+    width: 20px;
+    height: 20px;
+    transform: scale(3);
+}
+
+.login-button:hover {
+    color: #ff0000;
+    font-weight: bold;
+    box-shadow: 6px 4px 9px #ffffffff;
+    transform: scale(1.2);
+}
+.current {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor:grabbing;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    margin-top: 8.7%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.d {
+    max-width: 100%;
+    width: 70%
+}
+
+.title {
+    font-size: 60px;
+    font-family: 'Bahnschrift SemiBold';
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-inline: 10%;
+    gap: 20px;
+}
+
+.event-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 30px;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.event-info {
+    display: block;
+}
+
+.event-item img {
+    border-radius: 3%;
+    transition: transform 0.3s;
+    margin-right: 50px;
+}
+
+.event-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.event-item span {
+    font-size: 13px;
+    color: #666;
+    flex-grow: 1; /* Allow the span to grow and take available space */
+}
+
+.event-button {
+    background: linear-gradient(to bottom right, #000000, #333333);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding-block: 15px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+    max-width: 90%;
+    height: 40px;
+}
+
+.event-button:hover {
+    background: linear-gradient(to bottom right, #ff0f0f, #929292);
+    transform: scale(1.05);
+}
+
+.divider {
+    width: 0;
+    height: 150px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    background: linear-gradient(to bottom right, #000000, #333333);
+    color: #ffffff;
+    padding: 20px;
+}
+
+footer a {
+    color: #a8a8a8;
+    transition: transform 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+footer a:hover {
+    color: #ff0000;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+.event-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}

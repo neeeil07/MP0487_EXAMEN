@@ -1,0 +1,271 @@
+body {
+    font-family: 'Bahnschrift';
+    margin: 0;
+}
+
+header {
+    max-width: 100%;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background: linear-gradient(to bottom right, #000000, #333333);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-container {
+    display: block;
+    width: 90px;
+    transition: transform 0.3s;
+}
+
+.logo-container:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-inline: 5%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, font-weight 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.login-button {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    transition: transform 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+.login-button:hover {
+    color: #ff0000;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.current {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor:grabbing;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.login-button {
+    color: #ffffff;
+    font-size: 20px;
+    max-width: 100%;
+    width: 1%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 50px;
+    transition: transform 0.3s, color 0.3s, font-weight 0.3s, box-shadow 0.3s;
+}
+
+.login-button img {
+    width: 20px;
+    height: 20px;
+    transform: scale(3);
+}
+
+.login-button:hover {
+    color: #ff0000;
+    font-weight: bold;
+    box-shadow: 6px 4px 9px #ffffffff;
+    transform: scale(1.2);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin: 0;
+}
+
+.banner {
+    max-width: 100%;
+    height: 30vh;
+    margin-top: 8.5%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    object-fit: cover;
+    padding-inline: 10%;
+    background: linear-gradient(to right bottom, #00b7c4, #004d5d);
+}
+
+.banner h2 {
+    font-family: 'Bahnschrift Light';
+    color: #ffffff;
+    margin: 10px 0px 0px 0px;
+    padding: 40px 50px;
+}
+
+.banner p {
+    font-size: 45px;
+    font-family: 'Bahnschrift Light';
+    font-style: italic;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 30px;
+}
+
+.banner hr {
+    max-width: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    margin: -10px 10px 10px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover  img {
+    transform: scale(1.05);
+}
+
+.add-cart {
+    font-family: 'Bahnschrift Light';
+    font-size: 20px;
+    font-style: italic;
+    background: linear-gradient(to bottom right, #000000, #333333);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: background 0.5s, transform 0.3s, padding 0.3s;
+    height: 40px;
+}
+
+.add-cart span {
+    opacity: 0;
+    margin-inline: -5px;
+    font-size: 0px;
+    transition: opacity 0.3s, font-size 0.3s;
+}
+
+.add-cart:hover {
+    background: linear-gradient(to right bottom, #00b7c4, #004d5d);
+    transform: scale(1.03);
+    padding-inline: 0px 30px;
+    
+    span {
+        opacity: 1;
+        font-size: 20px;
+    }
+}
+
+.add-cart img {
+    width: 50px;
+    height: 20px;
+    margin-inline: -5px 5px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 10px 30px;
+    font-size: 18px;
+    z-index: 10;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.07);
+}
+
+.filter-container label {
+    font-weight: bold;
+    color: #00b7c4;
+}
+
+#type-filter {
+    font-family: 'Bahnschrift Light';
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid #00b7c4;
+    font-size: 16px;
+    background: #fff;
+    color: #00b7c4;
+    transition: border 0.2s;
+}
+
+#type-filter:focus {
+    outline: none;
+    border: 2px solid #000;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    background: linear-gradient(to bottom right, #000000, #333333);;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 2%;
+}
+
+footer a {
+    color: #a8a8a8;
+    transition: transform 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+footer a:hover {
+    color: #ff0000;
+    font-weight: bold;
+    transform: scale(1.2);
+}

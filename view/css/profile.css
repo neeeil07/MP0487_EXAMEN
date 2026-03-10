@@ -1,0 +1,259 @@
+body {
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    max-width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background: linear-gradient(to bottom right, #000000, #333333);
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 90px;
+    transition: transform 0.3s;
+}
+
+.logo-container:hover img {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 120px auto; /* Adjusted margin to create space from the fixed nav */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+}
+
+.container .default-profile {
+    margin-top: -200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.container .banner {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.container p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555555;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #cb0000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="file"]::file-selector-button {
+    content: 'Choose File';
+    font-family: 'Bahnschrift Light';
+    background: linear-gradient(to left top, #000000, #333333);
+    color: #ffffff;
+    font-size: 15px;
+    margin: 1px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: linear-gradient(to right bottom, #00b7c4, #004d5d);
+    transform: scale(1.02);
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-block: 30px 10px;
+    margin-inline: 10%;
+}
+
+/* Pantallas muy grandes (1440px y superiores) */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+ 
+    nav {
+        width: 100%;
+    }
+}
+
+/* Telefonos (max 678px) */
+@media screen and (max-width: 678px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    video {
+        display: none;
+    }
+
+    nav ul li a  {
+        font-size: 20px;
+    }
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav ul {
+        gap: 5px;
+    }
+
+    .container {
+        margin-top: 200px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .default-profile {
+        width: 100px;
+    }
+}
+
+/* Tablets y Pantallas medianas (max 1440px) */
+@media screen and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        width: 100%;
+    }
+    nav ul li a  {
+        font-size: 20px;
+    }
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav ul {
+        gap: 5px;
+    }
+
+    .login-button {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-left: 8%;        
+    }
+
+    article {
+        padding: 10px;
+    }
+    
+    footer {
+        grid-template-columns: repeat(1, 100%);
+        padding: 40px;
+        font-size: 18px;
+    }
+    footer a:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s, color 0.3s, font-weight 0.3s;
+    }
+}
